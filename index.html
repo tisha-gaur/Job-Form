@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="apply-box">
+            <h1>Job Application <span class="small-text">(Web)</span></h1>
+            <form action="">
+                <div class="form-container">
+                    <div class="form-control">
+                        <label for="first_name">First Name</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="First Name..">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" placeholder="Last Name..">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="">Email</label>
+                        <input type="" name="" id="" placeholder="Enter Email">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="job_role">Job Role</label>
+                        <select id="job_role" name="job_role">
+                            <option value="">Select Job Role</option>
+                            <!-- isme humne value null rakhi hai taki ispe click kare to empty string jaye -->
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="fullstack">Full Stack Developer</option>
+                            <option value="ui_ux">UI UX Designer</option>
+                        </select>
+                    </div>
+
+                    <div class="textarea-control">
+                        <label for="address">Address</label>
+                        <textarea id="address" name="address" cols="30" rows="4" placeholder="Enter Address"></textarea>
+                    </div>
+
+                    <div class="form-control">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="Enter City">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="pincode">Pincode</label>
+                        <input type="number" name="pincode" id="pincode">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="start_date">Start Date</label>
+                        <input value="2023-08-26" type="date" name="start_date" id="start_date">
+                    </div>
+
+                    <div class="form-control">
+                        <label for="upload">Upload Your CV</label>
+                        <input type="file" name="upload" id="upload">
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Apply Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
